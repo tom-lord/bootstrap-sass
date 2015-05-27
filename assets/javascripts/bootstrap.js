@@ -786,10 +786,12 @@ if (typeof jQuery === 'undefined') {
         .trigger('focus')
         .attr('aria-expanded', 'true')
 
-      $parent
-        .toggleClass('open')
-        .trigger('shown.bs.dropdown', relatedTarget)
+
     }
+    
+    $parent
+      .toggleClass('open')
+      .trigger('shown.bs.dropdown', relatedTarget)
 
     return false
   }
